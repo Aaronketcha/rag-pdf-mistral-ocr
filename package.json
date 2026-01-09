@@ -1,0 +1,49 @@
+{
+  "name": "rag-pdf-mistral-ocr",
+  "version": "1.0.0",
+  "description": "Système RAG complet avec OCR Mistral pour traitement automatique de PDF",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "docker:build": "docker build -t rag-pdf-mistral .",
+    "docker:run": "docker-compose up -d"
+  },
+  "keywords": [
+    "rag",
+    "pdf",
+    "ocr",
+    "mistral",
+    "vector-search",
+    "chat",
+    "ai"
+  ],
+  "author": "RAG System Developer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "chokidar": "^3.5.3",
+    "bull": "^4.12.2",
+    "redis": "^4.6.10",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "uuid": "^9.0.1",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3",
+    "@types/jest": "^29.5.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
